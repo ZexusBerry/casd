@@ -57,7 +57,7 @@ local function clantags()
                 "One",
                 "On",
                 "O",
-                ""
+                "",
             }
 
             local curtime = math.floor((i_global_vars.GetCurTime()) * 3)
