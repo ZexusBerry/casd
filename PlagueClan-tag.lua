@@ -38,6 +38,8 @@ local function clantags()
             " ",
             }
 
+           elseif menu.get_int("clantag") == 3 then 
+
             local clantag_Onetap = {
                 "",
                 "O",
