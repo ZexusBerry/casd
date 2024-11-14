@@ -94,6 +94,13 @@ local function clantags()
                 old_clantag_string = clantag_string
             end
 
+            local curtime = math.floor((i_global_vars.GetCurTime()) * 3)
+            local clantag_string = clantag_Onetap[curtime % #clantag_Onetap + 1]
+            if clantag_string ~= old_clantag_string then
+                cheat.set_clantag(clantag_string)
+                old_clantag_string = clantag_string
+            end
+
             local curtime = math.floor((i_global_vars.GetCurTime()) * 3.5)
             local clantag_string = clantag_neopredelenu[curtime % #clantag_neopredelenu + 1]
             if clantag_string ~= old_clantag_string then
